@@ -1,0 +1,4 @@
+first open git bash, access to desktop file
+cd C:/Users/kimtong/OneDrive/Desktop/
+
+
