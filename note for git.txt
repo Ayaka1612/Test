@@ -1,4 +1,12 @@
 first open git bash, access to desktop file
 cd C:/Users/kimtong/OneDrive/Desktop/
 
+access folder that connect to github repository
+cd "for Github"/
 
+if new folder command line from github new repository
+if already connected from local folder to github repository follow this: 
+ 
+git add . 
+git commit -m "Message"
+git push -u origin

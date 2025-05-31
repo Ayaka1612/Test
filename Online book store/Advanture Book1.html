@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-km">
+
+<head>
+    <title>Curated Chapters</title>
+    <link rel="stylesheet" href="Advanture Book.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <img class="A" src="book_store_logo.png" alt="Book Store Logo">
+
+    <!-- Menubar -->
+    <div class="Parent1">
+        <nav class="a"><i class="fa fa-home"></i> Home</nav>
+        <nav class="b"><i class="fa fa-search"></i> About</nav>
+        <nav class="c"><i class="fa fa-shopping-bag"></i> Products</nav>
+        <nav class="d"><i class="fa fa-phone"></i> Contact</nav>
+    </div>
+
+    <!-- Book -->
+    <h2 class="title">Advanture And Fairy Tales</h2>
+    <div class="container">
+
+        <div class="children">
+            <img src="./image/book1.jfif" alt="The Lost Wonderland">
+            <h2>The Lost Wonderland</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+        <div class="children">
+            <img src="./image/book2.jfif" alt="The Thumbelina">
+            <h2>The Thumbelina</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+        <div class="children">
+            <img src="./image/book3.png" alt="The Magic of Zodiac">
+            <h2>The Magic of Zodiac</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+        <div class="children">
+            <img src="./image/book4.jfif" alt="The Little Red Riding Hood">
+            <h2>The Little Red Riding Hood</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+        <div class="children">
+            <img src="./image/book5.jfif" alt="The Lost Wonderland">
+            <h2>The Lost Wonderland</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+        <div class="children">
+            <img src="./image/book6.jfif" alt="The House on Hoarder Hill">
+            <h2>The House on Hoarder Hill</h2>
+            <button onclick="showRegisterForm()">Purchase</button>
+        </div>
+    </div>
+            <h2 class="title">Love Story</h2>
+
+
+        <div class="container">
+            <div class="children">
+                <img src="./image/book7.jfif" alt="Twisted Love">
+                <h2>Twisted Love</h2>
+                <button onclick="showRegisterForm()">Purchase</button>
+            </div>
+            <div class="children">
+                <img src="./image/book8.jfif" alt="Twisted Lies">
+                <h2>Twisted Lies</h2>
+                <button onclick="showRegisterForm()">Purchase</button>
+            </div>
+            <div class="children">
+                <img src="./image/book9.jfif" alt="សូរបនខា">
+                <h2>សូរបនខា</h2>
+                <button onclick="showRegisterForm()">Purchase</button>
+            </div>
+            <div class="children">
+                <img src="./image/book10.jfif" alt="សូរបនខា">
+                <h2>សូរបនខា</h2>
+                <button onclick="showRegisterForm()">Purchase</button>
+            </div>
+            <div class="children">
+                <img src="./image/book11.jfif" alt="ខ្ញុំជាពន្លឺ អ្នកជាស្រមោល">
+                <h2>ខ្ញុំជាពន្លឺ អ្នកជាស្រមោល</h2>
+                <button onclick="showRegisterForm()">Purchase</button>
+            </div>
+        </div>
+
+        <!-- Register Form Modal -->
+        <div id="modal">
+            <form id="registrationForm">
+                <div>
+                    <p class="word">Login To get Top Fan</p>
+                </div>
+                <div class="form">
+                    <label for="Name" required>Full Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="Female"> Female
+                    <input type="radio" name="gender" value="Male"> Male
+                </div>
+                <div class="form">
+                    <label for="bd">Date of birth</label>
+                    <input type="date" id="bd" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="AAA@gmail.com" required>
+                </div>
+                <div class="form">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="form">
+                    <input type="checkbox" id="agree" required> Agree to Terms
+                </div>
+                <div class="form">
+                    <button class="processing" type="submit">Submit</button>
+                    <button class="processing" type="reset">Reset</button>
+                </div>
+
+            </form>
+            <button class="processing1" onclick="hideRegisterForm()">Close</button>
+        </div>
+
+        <script>
+            alert("Welcome to Our Curated Chapters Book Store");
+            function showRegisterForm() {
+                document.getElementById('modal').style.display = 'block';
+            }
+
+            function hideRegisterForm() {
+                document.getElementById('modal').style.display = 'none';
+            }
+
+            document.getElementById('registrationForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Form submitted!');
+                hideRegisterForm();
+
+            });
+        </script>
+
+
+
+</body>
+
+</html>
